@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace KidsMath.Models
 {
-    public class Parent
+    public class Parent : User
     {
         private List<User> _children;
   

@@ -14,7 +14,7 @@ namespace KidsMath.Models
         private string _lastName;
         private string _login;
      
-        private object _avatar;
+        private object _avatar;  // crear objetos ,para estos dos
         private object _theme;
 
 
