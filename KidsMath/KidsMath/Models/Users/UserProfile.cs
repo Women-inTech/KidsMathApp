@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace KidsMath.Models
+namespace KidsMath.Models.Users
 {
     /// <summary>
     /// Class to manage the Profile of the User

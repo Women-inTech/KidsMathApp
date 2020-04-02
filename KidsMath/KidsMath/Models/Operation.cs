@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace KidsMath.Models
 {
-    public enum Operadores
+    public enum Operators
     {
         ADD,
         SUBSTRACTION,
@@ -14,27 +14,51 @@ namespace KidsMath.Models
     }
     public class Operations
     {
-    
-        private float[] _operandos;
-        private int[] _operadores;
-        private float _result;
+
+        private float[] _operands;
+        private int[] _operators;
+        private double _result;
+
+        public Operations(float[] operands, int[] operators)
+        {
+            this._operands = operands;
+            this._operators = operators;
+
+            this.ValidateArguments();
+            this.ExecuteOperations();
+        }
+
+        public Operations(float[] operands, int[] operators, double result)
+        {
+            this._operands = operands;
+            this._operators = operators;
+            this._result = result;
+
+            this.ValidateArguments();
+        }
+
+        public void ExecuteOperations()
+        {
+            // resuelve la operacion
+            // la guarda en result
+        }
+
+        public bool ValidateArguments()
+        {
+            try
+            {
+
+            }
+            catch
+            {
+
+                return false;
+            }
+            return true;
+        }
         
-        public Operations(float [] operandos, int [] operadores)
-        {
-            //validar argumentos
 
-            // asignaciones
-
-            // Hacer operacion
-            GetResult();
-        }
-        public void GetResult()
-        {
-            // hacer operacion
-            //guardar en _result
-        }
-
-        public float Result
+        public double Result
         {
             get
             {
