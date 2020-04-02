@@ -5,13 +5,9 @@ using System.Threading.Tasks;
 
 namespace KidsMath.Models
 {
-    public enum Operators
-    {
-        ADD,
-        SUBSTRACTION,
-        MULTIPLICATION,
-        DIVISION
-    }
+    /// <summary>
+    /// Class that manage one set of operands and operators to solve
+    /// </summary>
     public class Operations
     {
 

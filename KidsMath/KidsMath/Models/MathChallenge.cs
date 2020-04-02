@@ -5,6 +5,10 @@ using System.Threading.Tasks;
 
 namespace KidsMath.Models
 {
+
+    /// <summary>
+    /// Class that manage all the data required for the webpage that the child will solve
+    /// </summary>
     public class MathChallenge
     {
         private ChallengeRequeriments _requeriments;

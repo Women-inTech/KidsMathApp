@@ -5,25 +5,11 @@ using System.Threading.Tasks;
 
 
 namespace KidsMath.Models
-{
-    public enum WorksheetStatus
-    {
-        NEW,
-        FINISHED,
-        UNFINISHED,
-    }
+{ 
 
-    public struct OperandsRange
-    {
-        public int Start;
-        public int End;
-
-        public OperandsRange(int start, int end)
-        {
-            this.Start = start;
-            this.End = end;
-        }
-    }
+    /// <summary>
+    /// Class that stores all the data necesary to create a MathChallenge (probably what will be stored in the DB for challenges history)
+    /// </summary>
     public class ChallengeRequeriments
     {
         private int [] _operators;
