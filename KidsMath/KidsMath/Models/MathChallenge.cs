@@ -84,6 +84,11 @@ namespace KidsMath.Models
 
         }
 
+        public void PauseTimer()
+        {
+
+        }
+
         public void CalculateScore()
         {
             
